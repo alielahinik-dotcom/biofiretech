@@ -215,6 +215,27 @@ a {
 /* Zoom adjustments */
 .team-photo.zoom-out { transform: scale(0.85); }
 
+/* Partners logos */
+.partners {
+  margin-top: 3rem;
+}
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.partners-logos img {
+  max-height: 48px;
+  width: auto;
+  opacity: 0.95;
+  filter: grayscale(0);
+}
+@media (min-width: 720px) {
+  .partners-logos img { max-height: 64px; }
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .hero h1 {
