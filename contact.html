@@ -12,11 +12,16 @@
       <a href="index.html" class="nav-brand" aria-label="BioFire">
         <img src="assets/Logo.png" alt="BioFire logo" class="logo" />
       </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="technology.html">Technology</a></li>
         <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -43,9 +48,18 @@
       <p>
         <strong>Address:</strong><br>
         Van der Maasweg 9<br>
-        2629 HZ Delft<br> 
+        2629 HZ Delft<br>
         The Netherlands
       </p>
+
+      <div class="card map-wrapper">
+        <iframe
+          class="map-iframe"
+          src="https://www.google.com/maps?q=TNW+Building+58+TU+Delft&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
 
     <section>
@@ -57,7 +71,7 @@
       <h2>Send us a Message</h2>
       <p>Tell us about your project or inquiry. We'll get back to you soon.</p>
       
-      <form action="#" method="POST">
+      <form id="contact-form" method="POST">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
@@ -73,9 +87,10 @@
           <textarea id="message" name="message" rows="6" required></textarea>
         </div>
 
-        <button type="submit" class="cta">Send</button>
+        <button type="submit" class="btn">Send</button>
       </form>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>

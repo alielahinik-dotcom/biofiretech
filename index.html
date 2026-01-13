@@ -12,8 +12,13 @@
       <a href="index.html" class="nav-brand" aria-label="BioFire">
         <img src="assets/Logo.png" alt="BioFire logo" class="logo" />
       </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
         <li><a href="technology.html">Technology</a></li>
         <li><a href="team.html">Team</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -22,15 +27,24 @@
   </header>
 
   <main class="wrap">
-    <section class="hero">
+    <section class="hero container">
       <h1>BioFire</h1>
       <p class="subheading">Bacterially Produced Flame Retardant Polymer</p>
-      <a href="contact.html" class="cta">Get in Touch</a>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn">Get in Touch</a>
+        <a href="technology.html" class="btn secondary">Learn More</a>
+      </div>
     </section>
 
     <section>
-      <h2>Our Mission</h2>
-      <p>We develop the world’s first bacterially produced flame-retardant polymer to make fire safety more sustainable.</p>
+      <h2>Mission</h2>
+      <p>BioFire uses biotechnology to deliver safer, more sustainable flame-retardant materials for a multi-billion-euro market shifting toward higher-functionality, regulation-ready formulations.</p>
+    </section>
+
+    <section class="container">
+      <div class="product-figure card">
+        <img src="assets/Product_picture.png" alt="BioFire product" class="product-image" />
+      </div>
     </section>
 
     <section>
@@ -70,11 +84,17 @@
       </ul>
     </section>
 
-    <section>
+    <section class="container card padded">
       <h2>Collaboration</h2>
       <p>We partner with composite manufacturers and coatings formulators to develop application-specific formulations and validate performance in the final end product.</p>
-      <a href="contact.html" class="cta">Let's Collaborate</a>
+      <a href="contact.html" class="btn">Let's Collaborate</a>
     </section>
+    <footer>
+      <div class="container">
+        <p>© BioFire • Sustainable flame retardant solutions • <a href="contact.html">Contact</a></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </main>
 </body>
 </html>

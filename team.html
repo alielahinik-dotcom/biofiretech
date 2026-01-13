@@ -12,10 +12,15 @@
       <a href="index.html" class="nav-brand" aria-label="BioFire">
         <img src="assets/Logo.png" alt="BioFire logo" class="logo" />
       </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="technology.html">Technology</a></li>
-        <li><a href="team.html">Team</a></li>
+        <li><a href="team.html" class="active" aria-current="page">Team</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -27,52 +32,51 @@
       <p class="subheading">BioFire is building a team that combines environmental biotechnology, bioprocess engineering, and materials science to solve flame retardancy industrial bottlenecks</p>
     </section>
 
-      <section>
+      <section class="container">
         <h2>Founding Team</h2>
         <p>The founders bring expertise in environmental biotechnology and bioprocess engineering, with hands-on experience in extracting and processing functional biopolymers from wastewater biomass and translating lab results into scalable process concepts.</p>
+
+        <div class="cards">
+          <article class="card team-member">
+            <img src="assets/Picture_Ali.jpg" alt="Ali Elahinik" class="team-photo" />
+            <div class="member-info">
+              <h3>Ali Elahinik, PhD</h3>
+              <p class="muted">Chief Executive Officer</p>
+              <p><a href="https://www.linkedin.com/in/alielahinik/" target="_blank" rel="noopener">LinkedIn</a></p>
+            </div>
+          </article>
+
+          <article class="card team-member">
+            <img src="assets/Picture_Sirous.jpg" alt="Sirous Ebrahimi" class="team-photo zoom-out" />
+            <div class="member-info">
+              <h3>Sirous Ebrahimi, PhD</h3>
+              <p class="muted">Chief Technology Officer</p>
+              <p><a href="https://www.linkedin.com/in/sirousebrahimi/" target="_blank" rel="noopener">LinkedIn</a></p>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <div class="team">
-        <div class="team-member">
-          <img src="assets/Picture_Ali.jpg" alt="Ali Elahinik" class="team-photo" />
-          <div class="member-info">
-            <h3>Ali Elahinik, PhD</h3>
-            <p>Chief Executive Officer</p>
-            <p><a href="https://www.linkedin.com/in/alielahinik/" target="_blank" rel="noopener">LinkedIn</a></p>
-          </div>
-        </div>
-
-        <div class="team-member">
-          <img src="assets/Picture_Sirous.jpg" alt="Sirous Ebrahimi" class="team-photo zoom-out" />
-          <div class="member-info">
-            <h3>Sirous Ebrahimi, PhD</h3>
-            <p>Chief Technology Officer</p>
-            <p><a href="https://www.linkedin.com/in/sirousebrahimi/" target="_blank" rel="noopener">LinkedIn</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
+    <section class="container">
       <h2>Advisors</h2>
 
-      <div class="team">
-        <div class="team-member">
+      <div class="cards">
+        <article class="card team-member">
           <img src="assets/Picture_Mark.jpg" alt="Prof. Mark van Loosdrecht" class="team-photo" />
           <div class="member-info">
             <h3>Prof. Mark van Loosdrecht</h3>
-            <p>Head of Environmental Biotechnology, TU Delft</p>
+            <p class="muted">Head of Environmental Biotechnology, TU Delft</p>
             <p><a href="https://www.linkedin.com/in/markvanloosdrecht/" target="_blank" rel="noopener">LinkedIn</a></p>
           </div>
-        </div>
+        </article>
 
-        <div class="team-member">
+        <article class="card team-member">
           <img src="assets/Picture_Yuemei.jpg" alt="Dr. Yuemei Lin" class="team-photo" />
           <div class="member-info">
             <h3>Dr. Yuemei Lin</h3>
-            <p>Head of Biopolymer (EPS) Research, TU Delft</p>
+            <p class="muted">Head of Biopolymer (EPS) Research, TU Delft</p>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -93,9 +97,9 @@
       <p>We will respond to relevant profiles</p>
     </section>
 
-    <section class="partners">
+    <section class="partners container">
       <h2>Partners</h2>
-      <div class="partners-logos">
+      <div class="partners-logos card padded">
         <img src="assets/Logo_partner1.png" alt="Partner 1" />
         <img src="assets/Logo_partner2.png" alt="Partner 2" />
         <img src="assets/Logo_partner3.png" alt="Partner 3" />
@@ -107,7 +111,12 @@
         <img src="assets/Logo_partner9.png" alt="Partner 9" />
       </div>
     </section>
-
+    <footer>
+      <div class="container">
+        <p>© BioFire • Team • <a href="contact.html">Contact</a></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </main>
 </body>
 </html>
