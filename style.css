@@ -383,3 +383,7 @@ footer {
 /* Product image on Home */
 .product-figure { max-width: 760px; margin: 0 auto var(--space-md); padding: 0; }
 .product-image { width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--color-border); }
+
+/* News items */
+.news-item { margin-bottom: 2rem; }
+.news-image { width: 25%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--color-border); margin-top: 1rem; }
