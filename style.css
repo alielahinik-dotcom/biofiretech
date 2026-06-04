@@ -23,7 +23,7 @@
   --shadow-md: 0 6px 20px rgba(10,20,30,0.08);
 
   /* Type scale (fluid) */
-  --fs-base: 1rem;
+  --fs-base: 1.125rem;
   --fs-lg: clamp(1.125rem, 1vw + 0.75rem, 1.25rem);
   --fs-xl: clamp(1.5rem, 2.5vw, 2.625rem);
   --fs-xxl: clamp(2rem, 4vw, 3.25rem);
@@ -32,7 +32,7 @@
 * { box-sizing: border-box; }
 
 body {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: "Gill Sans Nova", "Gill Sans", "Trebuchet MS", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-text);
@@ -93,21 +93,21 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--color-muted);
-  font-size: 0.95rem;
+  color: #636B2F;
+  font-size: 1.2rem;
   font-weight: 600;
   padding: 0.5rem 0.25rem;
   border-radius: 6px;
 }
 
 .nav-links a:hover {
-  color: var(--color-primary);
+  color: #636B2F;
   box-shadow: inset 0 -3px 0 var(--color-accent);
 }
 
 .nav-links a.active,
 .nav-links a[aria-current="page"] {
-  color: var(--color-primary);
+  color: #636B2F;
   box-shadow: inset 0 -3px 0 var(--color-accent);
 }
 
@@ -142,7 +142,7 @@ body {
 .hero {
   margin-bottom: var(--space-xl);
   padding: var(--space-lg);
-  background: linear-gradient(180deg, rgba(31,74,107,0.04), transparent 60%);
+  background: #C3B091;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
 }
@@ -152,11 +152,12 @@ body {
   font-weight: 800;
   line-height: 1.05;
   margin: 0 0 var(--space-md) 0;
+  color: #000;
 }
 
 .hero .subheading {
   font-size: var(--fs-lg);
-  color: var(--color-muted);
+  color: #000;
   margin: 0 0 var(--space-md) 0;
 }
 
@@ -178,7 +179,7 @@ h3 {
   margin: 1.5rem 0 0.75rem 0;
 }
 
-p { margin: 0 0 var(--space-md) 0; color: var(--color-muted); }
+p { margin: 0 0 var(--space-md) 0; color: var(--color-muted); text-align: justify; }
 
 ul, ol {
   margin: 1rem 0;
@@ -195,7 +196,7 @@ li {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--color-primary);
+  background: #636B2F;
   color: white;
   padding: 0.6rem 1rem;
   border-radius: var(--radius-sm);
@@ -230,7 +231,7 @@ input[type="text"],
 input[type="email"],
 textarea {
   padding: 0.75rem;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: "Gill Sans Nova", "Gill Sans", "Trebuchet MS", sans-serif;
   font-size: 1rem;
   border: 1px solid var(--color-border);
   border-radius: 4px;
