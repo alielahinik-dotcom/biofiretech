@@ -176,6 +176,7 @@ body {
   width: 100%;
   max-width: 640px;
   height: auto;
+  margin: 0 auto;
   object-fit: contain;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
