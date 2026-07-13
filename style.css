@@ -165,12 +165,22 @@ body {
   margin: 0 0 var(--space-md) 0;
 }
 
-.hero-actions { display: flex; gap: var(--space-md); align-items: center; }
+.hero-image-section {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 var(--space-xl);
+}
 
-/* Section styling */
-section { margin-bottom: calc(var(--space-lg) + var(--space-md)); }
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
 
-h2 {
   font-size: clamp(1.25rem, 1.2vw + 1rem, 2rem);
   font-weight: 700;
   margin: var(--space-lg) 0 var(--space-md) 0;
